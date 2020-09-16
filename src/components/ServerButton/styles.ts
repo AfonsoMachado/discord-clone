@@ -77,7 +77,7 @@ export const Button = styled.button<Props>`
   transition: border-radius 0.2s, background-color 0.2s;
 
   /* Animações */
-  &:active,
+  &.active,
   &:hover {
     border-radius: 16px;
     background-color: ${(props) =>
