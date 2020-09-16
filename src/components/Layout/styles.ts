@@ -16,7 +16,7 @@ export const Grid = styled.div`
 
   /* Estrutura de grid da pagina */
   grid-template-areas:
-    'SL SM CI CI'
+    'SL SN CI CI'
     'SL CL CD UL'
     'SL UI CD UL';
 
