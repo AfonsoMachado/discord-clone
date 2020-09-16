@@ -11,6 +11,25 @@ export const Container = styled.div`
   background-color: var(--secondary);
 `;
 
-export const Category = styled.div``;
+export const Category = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-export const AddCategoryIcon = styled(Add)``;
+  margin-bottom: 6px;
+
+  > span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray);
+  }
+`;
+
+export const AddCategoryIcon = styled(Add)`
+  width: 21px;
+  height: 21px;
+
+  color: var(--symbol);
+  cursor: pointer;
+`;
