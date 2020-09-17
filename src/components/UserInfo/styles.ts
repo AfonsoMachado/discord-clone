@@ -44,10 +44,57 @@ export const UserData = styled.div`
   }
 `;
 
-export const Icons = styled.div``;
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
 
-export const MicIcon = styled(Mic)``;
+  /*  pegando todos os icones menos o primeiro */
+  > svg:not(:first-child) {
+    margin-left: 7px;
+  }
+`;
 
-export const HeadphoneIcon = styled(Headset)``;
+export const MicIcon = styled(Mic)`
+  width: 20px;
+  height: 20px;
 
-export const SettingsIcon = styled(Settings)``;
+  color: var(--white);
+  opacity: 0.7;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const HeadphoneIcon = styled(Headset)`
+  width: 20px;
+  height: 20px;
+
+  color: var(--white);
+  opacity: 0.7;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+export const SettingsIcon = styled(Settings)`
+  width: 20px;
+  height: 20px;
+
+  color: var(--white);
+  opacity: 0.7;
+  cursor: pointer;
+
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
