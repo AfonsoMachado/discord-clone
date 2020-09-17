@@ -14,7 +14,7 @@ export const Container = styled.div`
   max-height: 100vh;
   /* saindo para fora da tela em y, faz um scroll */
   overflow-y: scroll;
-
+  scrollbar-width: none;
   /* editando a scrollbar */
   ::-webkit-scrollbar {
     display: none;
