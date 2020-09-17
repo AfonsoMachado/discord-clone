@@ -25,6 +25,7 @@ export const Container = styled.div`
 export const Avatar = styled.div`
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 
   background-color: var(--secondary);
   border-radius: 50%;
@@ -35,7 +36,7 @@ export const Avatar = styled.div`
 `;
 
 export const Message = styled.div`
-  max-height: 40px;
+  /* max-height: 40px; */
 
   display: flex;
   flex-direction: column;
@@ -77,4 +78,10 @@ export const Content = styled.div`
   color: var(--white);
 `;
 
-export const Mention = styled.span``;
+export const Mention = styled.span`
+  color: var(--link);
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`;

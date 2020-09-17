@@ -1,5 +1,5 @@
 import React from 'react';
-import ChannelMessage from '../ChannelMessage';
+import ChannelMessage, { Mention } from '../ChannelMessage';
 
 import { Container, Messages, InputWrapper, Input, InputIcon } from './styles';
 
@@ -7,13 +7,17 @@ const ChannelData: React.FC = () => {
   return (
     <Container>
       <Messages>
-        <ChannelMessage
-          author="Afonso Machado"
-          date="17/09/2020"
-          content="Fala irmão, tudo beleza?"
-        />
+        {/* gerando varias mensagens para exemplificar o scroll */}
+        {Array.from(Array(15).keys()).map((n) => (
+          <ChannelMessage
+            key={n}
+            author="Afonso Machado"
+            date="17/09/2020"
+            content="Fala irmão, tudo beleza?"
+          />
+        ))}
 
-        {/* <ChannelMessage
+        <ChannelMessage
           author="Jabba The Hutt"
           date="17/09/2020"
           content={
@@ -22,7 +26,9 @@ const ChannelData: React.FC = () => {
               shanee wy tonny wya uska!
             </>
           }
-        /> */}
+          hasMention
+          isBot
+        />
       </Messages>
 
       <InputWrapper>
