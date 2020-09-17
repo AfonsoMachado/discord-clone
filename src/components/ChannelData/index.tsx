@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import ChannelMessage, { Mention } from '../ChannelMessage';
 
 import { Container, Messages, InputWrapper, Input, InputIcon } from './styles';
 
 const ChannelData: React.FC = () => {
+  // Hook useref
+  const messageRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+
+  // Colocando o scroll para baixo assim que a pagina é carregada
+  useEffect(() => {
+    const div = messageRef.current;
+
+    if (div) {
+      div.scrollTop = div.scrollHeight;
+    }
+  }, [messageRef]);
+
   return (
     <Container>
-      <Messages>
+      <Messages ref={messageRef}>
         {/* gerando varias mensagens para exemplificar o scroll */}
         {Array.from(Array(15).keys()).map((n) => (
           <ChannelMessage
