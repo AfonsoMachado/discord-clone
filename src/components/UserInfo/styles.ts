@@ -26,7 +26,23 @@ export const Avatar = styled.div`
   background-color: var(--gray);
 `;
 
-export const UserData = styled.div``;
+export const UserData = styled.div`
+  margin-left: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  > strong {
+    font-size: 13px;
+    color: var(--white);
+    display: block;
+  }
+
+  > span {
+    color: var(--gray);
+    font-size: 13px;
+  }
+`;
 
 export const Icons = styled.div``;
 
