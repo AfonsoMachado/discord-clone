@@ -32,14 +32,15 @@ export const Container = styled.div`
       color: var(--white);
     }
 
+    /* Selecionando a segunda div somente div */
     /* ícones só aparecem quando passa o mouse */
-    > div svg.notFixed {
+    > div:not(:first-child) svg {
       display: flex;
     }
   }
 
   /* Dixendo ícones ocultos por padrão */
-  > div svg.notFixed {
+  > div:not(:first-child) svg {
     display: none;
   }
 `;

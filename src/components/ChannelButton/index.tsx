@@ -16,8 +16,8 @@ const ChannelButton: React.FC<Props> = ({ channelName, selected }) => {
       </div>
 
       <div>
-        <InviteIcon className="notFixed" />
-        <SettingsIcon className="notFixed" />
+        <InviteIcon />
+        <SettingsIcon />
       </div>
     </Container>
   );
