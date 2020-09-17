@@ -53,7 +53,7 @@ export const Input = styled.input`
     color: var(--gray);
   }
 
-  /* Deixando icone @ junto do input */
+  /* Deixando icone @ junto do input, selecionando o svg que vem logo depois */
   ~ svg {
     position: relative;
     top: -50%;
