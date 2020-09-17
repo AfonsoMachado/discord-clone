@@ -17,6 +17,7 @@ const Layout: React.FC = () => {
       <ChannelInfo />
       <ChannelList />
       <UserInfo />
+      <div />
       <UserList />
     </Grid>
   );
