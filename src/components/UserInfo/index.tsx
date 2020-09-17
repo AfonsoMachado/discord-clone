@@ -1,11 +1,29 @@
 import React from 'react';
 
-import { Container } from './styles';
+import {
+  Container,
+  Profile,
+  Avatar,
+  UserData,
+  Icons,
+  MicIcon,
+  HeadphoneIcon,
+  SettingsIcon,
+} from './styles';
 
 const UserInfo: React.FC = () => {
   return (
     <Container>
-      <h1>UserInfo</h1>
+      <Profile>
+        <Avatar />
+        <UserData />
+      </Profile>
+
+      <Icons>
+        <MicIcon />
+        <HeadphoneIcon />
+        <SettingsIcon />
+      </Icons>
     </Container>
   );
 };
