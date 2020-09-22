@@ -9,7 +9,7 @@
   <li><a href="https://pt-br.reactjs.org/">React</a></li>
   <li><a href="https://styled-components.com/">Styled Components</a></li>
   <li><a href="https://github.com/styled-icons/styled-icons">Styled Icons</a></li>
-  <li><a href="https://styled-components.com/">Typescript</a></li>
+  <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
 </ul>
 
 ## :fire: Instalação
